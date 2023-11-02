@@ -30,7 +30,7 @@ function App() {
       placeHolder: "enter expiry time",
     },
   ];
-  const { value, CacheArr } = useSelector((state) => state.lru);console.log(value)
+  const { value, CacheArr } = useSelector((state) => state.lru);
   const dispatch = useDispatch();
   const [operationType, setOperationType] = useState("GET");
 
@@ -42,7 +42,7 @@ function App() {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = () => {console.log(operationType)
+  const handleSubmit = () => {
     if (operationType === "GET") {
       if (values["Key"] !== "") {
         setErrorMessage(false);
@@ -50,7 +50,7 @@ function App() {
       } else {
         setErrorMessage(true);
       }
-    } else if (operationType === "POST") {console.log(values)
+    } else if (operationType === "POST") {
       if (
         values["Key"] !== "" &&
         values["Value"] !== "" &&
