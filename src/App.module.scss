@@ -1,0 +1,123 @@
+.container {
+  .header {
+    margin: 2% 5%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    @media screen and (max-width:600px){
+        margin:10% 5%;
+    }
+  }
+  .CacheWrapper {
+    margin: 0 auto 2%;
+    width: fit-content;
+    @media screen and (max-width:600px){
+        margin: 5% auto 2%;
+    }
+    .value {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #e5e7eb;
+      padding: 10px;
+      background-color: #f8ecf2;
+      border-radius: 5px;
+    }
+    .keyValueWrapper {
+        display: flex;
+        margin-right: 2vw;
+        @media screen and (max-width:600px){
+            margin-right: 7vw;
+        }
+      .itemValue {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #e5e7eb;
+        padding: 10px;
+        background-color: #f8ecf2;
+        border-radius: 5px;
+        margin: 0 2%;
+      }
+    }
+  }
+  .operationsWrapper {
+    width: 20%;
+    margin: auto;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 2%;
+    @media screen and (max-width:600px){
+        width: 80%;
+        margin: 10% auto;
+    }
+    .operationsHeader {
+      font-family: sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      background-color: #00cccc;
+      padding: 5% 10%;
+    }
+    .inputWrapper {
+      padding: 5% 0;
+      .selectDiv {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 10%;
+        .select {
+          width: 30%;
+          .option {
+          }
+        }
+        .label {
+          font-family: sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 2%;
+        }
+      }
+      .inputDiv {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 10%;
+        .label {
+          font-family: sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 2%;
+        }
+        .input {
+          width: 70%;
+          padding-left: 5%;
+        }
+      }
+    }
+    .buttonDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 5%;
+      .button {
+        background-color: #3366ff;
+        color: #fff;
+        padding: 2% 3%;
+        cursor: pointer;
+        border-style: none;
+        border-radius: 5px;
+      }
+    }
+    .errorMessage {
+      font-family: sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      color: red;
+      text-align: center;
+    }
+  }
+}
